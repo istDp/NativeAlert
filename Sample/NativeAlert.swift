@@ -58,6 +58,12 @@ extension UIViewController {
                 }
             }))
         }
+        if options.count == 0 {
+            // delays execution of code to dismiss
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0, execute: {
+                alertController.dismiss(animated: true, completion: nil)
+            })
+        }
         self.present(alertController, animated: true, completion: nil)
     }
 }

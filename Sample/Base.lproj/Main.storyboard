@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="bCS-UC-bNh">
-                                <rect key="frame" x="50.5" y="318.5" width="274" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="bCS-UC-bNh">
+                                <rect key="frame" x="26.5" y="318.5" width="322" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EM-tT-LOK">
                                         <rect key="frame" x="0.0" y="0.0" width="98" height="30"/>
@@ -28,10 +28,17 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLf-4Y-DN8">
-                                        <rect key="frame" x="198" y="0.0" width="76" height="30"/>
+                                        <rect key="frame" x="122" y="0.0" width="76" height="30"/>
                                         <state key="normal" title="WithAction"/>
                                         <connections>
                                             <action selector="witAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAB-SP-wAx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gER-2h-ohO">
+                                        <rect key="frame" x="222" y="0.0" width="100" height="30"/>
+                                        <state key="normal" title="WithoutButton"/>
+                                        <connections>
+                                            <action selector="witouButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wZg-ma-O1P"/>
                                         </connections>
                                     </button>
                                 </subviews>

@@ -15,9 +15,13 @@ class ViewController: UIViewController {
     @IBAction func witAction(_ sender: Any) {
         usageOfAlert()
     }
+    @IBAction func witouButton(_ sender: Any) {
+        self.presentAlertWithTitle(message: .custom("")) // 1
+
+    }
     
     @IBAction func WithouAction(_ sender: Any) {
-        self.presentAlertWithTitle(message: .custom(""), options: .ok) // 1
+        self.presentAlertWithTitle(message: .custom(""),options: .ok) // 1
 
     }
     func usageOfAlert(){
