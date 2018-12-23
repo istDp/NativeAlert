@@ -13,14 +13,14 @@ import UIKit
 typealias CompletionHandler = ((Int) -> Void)?
 
 enum Defaults {
-    static func set(_ object: Any, forKey defaultName: String) {
+    static func set(_ object: Any, forKey defaultName: Messages) {
         let defaults: UserDefaults = UserDefaults.standard
-        defaults.set(object, forKey:defaultName)
+        defaults.set(object, forKey:defaultName.value)
         defaults.synchronize()
     }
-    static func object(forKey key: String) -> AnyObject! {
+    static func object(forKey key: Messages) -> AnyObject! {
         let defaults: UserDefaults = UserDefaults.standard
-        return defaults.object(forKey: key) as AnyObject
+        return defaults.object(forKey: key.value) as AnyObject
     }
 }
 

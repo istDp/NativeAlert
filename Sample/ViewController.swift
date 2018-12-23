@@ -10,15 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
     let currentCountry = Utilities().getCountryFromLocale()
-
+    let img  = InitialsImageFactory().imageWith(name: "AKhil")
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Defaults.set(Messages.appName.value, forKey: AlertButtonTitle.ok.value)
-        let value = Defaults.object(forKey: AlertButtonTitle.ok.value)
-        print(value)
+        Defaults.set(Messages.appName.value, forKey: Messages.appName)
+        _ = Defaults.object(forKey: Messages.appName)
+        _ = img ?? UIImage()
+        
     }
     @IBAction func witAction(_ sender: Any) {
+        
         usageOfAlert()
     }
     @IBAction func witouButton(_ sender: Any) {
