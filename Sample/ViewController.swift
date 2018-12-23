@@ -9,8 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    let currentCountry = Utilities().getCountryFromLocale()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        Defaults.set(Messages.appName.value, forKey: AlertButtonTitle.ok.value)
+        let value = Defaults.object(forKey: AlertButtonTitle.ok.value)
+        print(value)
     }
     @IBAction func witAction(_ sender: Any) {
         usageOfAlert()
@@ -29,7 +35,11 @@ class ViewController: UIViewController {
         self.presentAlertWithTitle(title: .appName, message: .passwordMatch, options: .ok,.no) { (option) in
             switch (option) {
             case 0:
-                print(0)
+                let picker = ADCountryPicker(style: .grouped)
+                picker.delegate = self
+                picker.showCallingCodes = true
+                let pickerNavigationController = UINavigationController(rootViewController: picker)
+                self.present(pickerNavigationController, animated: true, completion: nil)
             case 1:
                 print(1)
             default:
@@ -40,3 +50,10 @@ class ViewController: UIViewController {
 
 }
 
+//MARK:- country picker delegate
+extension ViewController: ADCountryPickerDelegate {
+    func countryPicker(_ picker: ADCountryPicker, didSelectCountryWithName name: String, code: String, dialCode: String, flagImg: UIImage) {
+        _ = picker.navigationController?.popToRootViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
+    }
+}

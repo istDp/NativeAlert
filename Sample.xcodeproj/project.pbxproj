@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82D3426921CFDB2600BEC73C /* ADCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D3426821CFDB2500BEC73C /* ADCountry.swift */; };
+		82D3426B21CFDB3000BEC73C /* ADCountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D3426A21CFDB2F00BEC73C /* ADCountryPicker.swift */; };
+		82D3426D21CFDB3700BEC73C /* assets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 82D3426C21CFDB3700BEC73C /* assets.bundle */; };
+		82D3426F21CFDD3900BEC73C /* CallingCodes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82D3426E21CFDD3900BEC73C /* CallingCodes.plist */; };
 		C66D58F521A7221D0058101B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66D58F421A7221D0058101B /* AppDelegate.swift */; };
 		C66D58F721A7221D0058101B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66D58F621A7221D0058101B /* ViewController.swift */; };
 		C66D58FA21A7221D0058101B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C66D58F821A7221D0058101B /* Main.storyboard */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		82D3426821CFDB2500BEC73C /* ADCountry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADCountry.swift; sourceTree = "<group>"; };
+		82D3426A21CFDB2F00BEC73C /* ADCountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ADCountryPicker.swift; sourceTree = "<group>"; };
+		82D3426C21CFDB3700BEC73C /* assets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = assets.bundle; sourceTree = "<group>"; };
+		82D3426E21CFDD3900BEC73C /* CallingCodes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CallingCodes.plist; sourceTree = "<group>"; };
 		C66D58F121A7221D0058101B /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66D58F421A7221D0058101B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C66D58F621A7221D0058101B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,7 +107,11 @@
 		C66D58F321A7221D0058101B /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				82D3426821CFDB2500BEC73C /* ADCountry.swift */,
+				82D3426A21CFDB2F00BEC73C /* ADCountryPicker.swift */,
+				82D3426C21CFDB3700BEC73C /* assets.bundle */,
 				C66D58F421A7221D0058101B /* AppDelegate.swift */,
+				82D3426E21CFDD3900BEC73C /* CallingCodes.plist */,
 				C66D58F621A7221D0058101B /* ViewController.swift */,
 				C6C2D18821B2810E0091BEF4 /* NativeAlert.swift */,
 				C66D58F821A7221D0058101B /* Main.storyboard */,
@@ -232,9 +244,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82D3426D21CFDB3700BEC73C /* assets.bundle in Resources */,
 				C66D58FF21A7221E0058101B /* LaunchScreen.storyboard in Resources */,
 				C66D58FC21A7221E0058101B /* Assets.xcassets in Resources */,
 				C66D58FA21A7221D0058101B /* Main.storyboard in Resources */,
+				82D3426F21CFDD3900BEC73C /* CallingCodes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +276,8 @@
 				C6C2D18921B2810E0091BEF4 /* NativeAlert.swift in Sources */,
 				C66D58F721A7221D0058101B /* ViewController.swift in Sources */,
 				C66D58F521A7221D0058101B /* AppDelegate.swift in Sources */,
+				82D3426921CFDB2600BEC73C /* ADCountry.swift in Sources */,
+				82D3426B21CFDB3000BEC73C /* ADCountryPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

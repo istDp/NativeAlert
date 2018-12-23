@@ -11,6 +11,28 @@ import UIKit
 
 
 typealias CompletionHandler = ((Int) -> Void)?
+
+enum Defaults {
+    static func set(_ object: Any, forKey defaultName: String) {
+        let defaults: UserDefaults = UserDefaults.standard
+        defaults.set(object, forKey:defaultName)
+        defaults.synchronize()
+    }
+    static func object(forKey key: String) -> AnyObject! {
+        let defaults: UserDefaults = UserDefaults.standard
+        return defaults.object(forKey: key) as AnyObject
+    }
+}
+
+
+
+
+
+
+
+
+
+
 //Button Titles----------------------
 
 enum AlertButtonTitle {
